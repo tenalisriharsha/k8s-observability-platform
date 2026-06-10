@@ -17,3 +17,10 @@ kubectl apply -f nginx-deployment.yaml
 kubectl get deployments,replicasets,pods
 minikube service nginx
 >>>>>>> 11ae3f8 (day-1: minikube nginx deployment with 3 replicas)
+
+## Day 2: Services & ConfigMaps
+- Rebuilt deployment declaratively with resource limits (CPU/memory)
+- Added ConfigMap to serve custom HTML content
+- Created Service YAML with ClusterIP, NodePort, and LoadBalancer types
+- Mastered kubectl port-forward for local debugging
+- Verified 3 replicas running with custom content mounted via volume
