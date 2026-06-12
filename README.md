@@ -24,3 +24,11 @@ minikube service nginx
 - Created Service YAML with ClusterIP, NodePort, and LoadBalancer types
 - Mastered kubectl port-forward for local debugging
 - Verified 3 replicas running with custom content mounted via volume
+
+## Day 4: Namespaces, RBAC, and HPA
+- Created `sre-learning` namespace for isolation
+- Rebuilt nginx deployment in new namespace with resource limits
+- Created ServiceAccount, Role, and RoleBinding for RBAC
+- Verified RBAC: can read pods, cannot delete pods
+- Set up Horizontal Pod Autoscaler (HPA): 3–10 replicas, 50% CPU target
+- Monitored namespace in Grafana dashboards
