@@ -2,13 +2,14 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: nginx-html
+  namespace: sre-learning
 data:
   index.html: |
     <html>
     <head><title>K8s Observability Platform</title></head>
     <body>
-    <h1>Day 2: Services & ConfigMaps</h1>
-    <p>Running on Kubernetes via declarative YAML.</p>
+    <h1>Day 4: Namespaces, RBAC, and HPA</h1>
+    <p>Running in the sre-learning namespace.</p>
     <p>Built by Sri Harsha for SRE transition.</p>
     </body>
     </html>
